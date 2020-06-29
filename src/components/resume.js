@@ -37,7 +37,7 @@ class Resume extends Component {
             <p
               style={{
                 color: "black",
-                paddingRight: "13em",
+                marginRight: "5em",
                 fontSize: "large",
                 fontWeight: "600",
               }}

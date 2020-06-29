@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <Layout>
+      <Layout fixedHeader>
         <Header
-          className="header-color"
+          className="header-color mdl-layout--fixed-header"
           title={
             <Navigation>
               <Link

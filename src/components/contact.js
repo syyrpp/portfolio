@@ -8,7 +8,7 @@ class Contact extends Component {
       <div className="contact-body">
         <Grid style={{ paddingTop: "8rem" }} className="contact-grid">
           <Cell
-            style={{ paddingLeft: "5rem", borderRight: "3px solid black" }}
+            style={{ paddingLeft: "3rem", borderRight: "3px solid black" }}
             col={6}
           >
             <h2>Caleb Jenkins</h2>
@@ -38,7 +38,7 @@ class Contact extends Component {
                     <i
                       style={{
                         color: "black",
-                        marginLeft: "2rem",
+
                         fontSize: "50px",
                       }}
                       className="fa fa-phone-square"
@@ -60,12 +60,13 @@ class Contact extends Component {
                     <i
                       style={{
                         color: "black",
-                        marginLeft: "2rem",
+
                         fontSize: "50px",
                       }}
                       className="fa fa-envelope"
                       aria-hidden="true"
                     />
+
                     <span style={{ color: "black", paddingLeft: "5rem" }}>
                       calebjenkins17@yahoo.com
                     </span>
@@ -87,7 +88,7 @@ class Contact extends Component {
                       <i
                         style={{
                           color: "black",
-                          marginLeft: "2rem",
+
                           fontSize: "50px",
                         }}
                         className="fa fa-linkedin"
@@ -115,7 +116,7 @@ class Contact extends Component {
                       <i
                         style={{
                           color: "black",
-                          marginLeft: "2rem",
+
                           fontSize: "50px",
                         }}
                         className="fa fa-github"
