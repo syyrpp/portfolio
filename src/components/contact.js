@@ -1,63 +1,138 @@
-import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-
+import React, { Component } from "react";
+import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import me from "./me.jpg";
 
 class Contact extends Component {
   render() {
-    return(
+    return (
       <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={6}>
-            <h2>Paul Hanna</h2>
+        <Grid style={{ paddingTop: "8rem" }} className="contact-grid">
+          <Cell
+            style={{ paddingLeft: "5rem", borderRight: "3px solid black" }}
+            col={6}
+          >
+            <h2>Caleb Jenkins</h2>
+            <hr></hr>
             <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+              src={me}
               alt="avatar"
-              style={{height: '250px'}}
-               />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-
+              style={{ height: "350px", width: "275px", paddingTop: "2em" }}
+            />
+            <p style={{ width: "75%", margin: "auto", paddingTop: "1em" }}>
+              Me
+            </p>
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
-            <hr/>
+            <hr />
 
             <div className="contact-list">
               <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
-                    (123) 456-7890
+                  <ListItemContent
+                    style={{
+                      fontSize: "40px",
+                      fontFamily: "Anton",
+                    }}
+                  >
+                    <i
+                      style={{
+                        color: "black",
+                        marginLeft: "2rem",
+                        fontSize: "50px",
+                      }}
+                      className="fa fa-phone-square"
+                      aria-hidden="true"
+                    />
+                    <span style={{ color: "black", paddingLeft: "5rem" }}>
+                      (832) 421-2920
+                    </span>
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    (123) 456-7890
+                  <ListItemContent
+                    style={{
+                      fontSize: "40px",
+                      fontFamily: "Anton",
+                    }}
+                  >
+                    <i
+                      style={{
+                        color: "black",
+                        marginLeft: "2rem",
+                        fontSize: "50px",
+                      }}
+                      className="fa fa-envelope"
+                      aria-hidden="true"
+                    />
+                    <span style={{ color: "black", paddingLeft: "5rem" }}>
+                      calebjenkins17@yahoo.com
+                    </span>
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
-                    someone@example.com
+                  <ListItemContent
+                    style={{
+                      fontSize: "40px",
+                      fontFamily: "Anton",
+                    }}
+                  >
+                    <a
+                      href="http://linkedin.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        style={{
+                          color: "black",
+                          marginLeft: "2rem",
+                          fontSize: "50px",
+                        }}
+                        className="fa fa-linkedin"
+                        aria-hidden="true"
+                      />
+                    </a>
+                    <span style={{ color: "black", paddingLeft: "5rem" }}>
+                      syyrpp
+                    </span>
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-skype" aria-hidden="true"/>
-                    MySkypeID
+                  <ListItemContent
+                    style={{
+                      fontSize: "40px",
+                      fontFamily: "Anton",
+                    }}
+                  >
+                    <a
+                      href="https://github.com/syyrpp"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        style={{
+                          color: "black",
+                          marginLeft: "2rem",
+                          fontSize: "50px",
+                        }}
+                        className="fa fa-github"
+                        aria-hidden="true"
+                      />
+                    </a>
+                    <span style={{ color: "black", paddingLeft: "5rem" }}>
+                      Caleb Jenkins
+                    </span>
                   </ListItemContent>
                 </ListItem>
-
-
               </List>
             </div>
           </Cell>
         </Grid>
       </div>
-    )
+    );
   }
 }
 
